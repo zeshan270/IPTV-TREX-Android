@@ -3,8 +3,6 @@ name: Build APK
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
   build:
@@ -18,14 +16,13 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       
-      - name: Build APK
+      - name: Build Release APK
         run: |
-          cd $GITHUB_WORKSPACE
           chmod +x gradlew
           ./gradlew assembleRelease
       
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: app-release.apk
-          path: app/build/outputs/apk/release/app-release.apk
+          name: app-release
+          path: app/build/outputs/apk/release/*.apk
