@@ -1,0 +1,58 @@
+╔════════════════════════════════════════════════════════════════╗
+║         IPTV TREX ANDROID - APK BUILD ANLEITUNG               ║
+╚════════════════════════════════════════════════════════════════╝
+
+WENN KOMMANDOZEILE NICHT FUNKTIONIERT:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LÖSUNG 1: Android Studio GUI (EMPFOHLEN ⭐)
+──────────────────────────────────────────
+1. Android Studio sollte bereits mit dem Projekt geöffnet sein
+2. Schließe den Fehler-Dialog
+3. Warte auf Gradle Sync (unten rechts)
+4. Klicke: Build → Build Bundle(s) / APK(s) → Build APK(s)
+5. Wähle Release-Variante
+6. Warte 10-15 Minuten
+7. APK wird erstellt unter: app/build/outputs/apk/release/app-release.apk
+
+LÖSUNG 2: Terminal in Android Studio
+─────────────────────────────────────
+1. In Android Studio: View → Tool Windows → Terminal
+2. Gib ein:
+   ./gradlew assembleRelease
+3. Warte bis fertig
+
+LÖSUNG 3: Manuell über Android Studio Module
+──────────────────────────────────────────────
+1. Klicke im Projekt-Baum auf "app" Modul
+2. Rechtsklick → Build → Build APK
+3. Folge den Dialogen
+
+═══════════════════════════════════════════════════════════════
+
+WO WIRD DIE APK ERSTELLT?
+─────────────────────────
+app/build/outputs/apk/release/app-release.apk
+
+WIE INSTALLIEREN?
+─────────────────
+1. Android-Handy über USB verbinden
+2. Run 'app' Button in Android Studio drücken
+3. APK wird automatisch installiert & gestartet
+
+═══════════════════════════════════════════════════════════════
+
+PROJEKT DETAILS:
+────────────────
+✅ Kotlin 1.9.20
+✅ Jetpack Compose 1.6.0
+✅ ExoPlayer 1.1.1 (HLS/DASH)
+✅ Room Database
+✅ Retrofit + OkHttp
+✅ Hilt DI
+✅ Firebase Messaging
+✅ Material 3 Theme
+✅ 40+ Kotlin Files
+✅ ProGuard Obfuscation (Release)
+
+═══════════════════════════════════════════════════════════════

@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.iptv_trex.test.app-mergeDebugAndroidTestResources-32:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\azesh\\.gradle\\caches\\transforms-3\\e4be2a80c607e3961eea6263db287fa6\\transformed\\core-1.12.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        }
+    ]
+}

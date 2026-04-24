@@ -1,0 +1,2 @@
+Fehler: Hauptklasse assembleRelease konnte nicht gefunden oder geladen werden
+Ursache: java.lang.ClassNotFoundException: assembleRelease
